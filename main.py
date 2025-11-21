@@ -31,12 +31,12 @@ if __name__ == "__main__":
     uvicorn.run(
         "main:app",
         host="0.0.0.0",
-        port=PORT,
+        port=int(PORT),
         reload=True
     )
-    # uvicorn.run(
-    #     "app.main:app",
-    #     host="0.0.0.0",
-    #     port=PORT,
+    # uvicorn.run(s
+    #     "main:app",
+    #     host="127.0.0.1",
+    #     port=int(PORT),
     #     reload=True
     # )
